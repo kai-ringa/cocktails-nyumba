@@ -35,12 +35,20 @@ function Navbar() {
         <div className="links-container" ref={linksContainerRef}>
           <ul className="links" ref={linksRef}>
             <li>
-              <Link to="/" className="link">
+              <Link
+                to="/"
+                className="link"
+                onClick={() => (linksContainerRef.current.style.height = '0')}
+              >
                 home
               </Link>
             </li>
             <li>
-              <Link to="about" className="link">
+              <Link
+                to="about"
+                className="link"
+                onClick={() => (linksContainerRef.current.style.height = '0')}
+              >
                 about
               </Link>
             </li>
